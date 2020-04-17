@@ -6,6 +6,7 @@ services:
   pihole:
     container_name: pihole
     image: pihole/pihole:latest
+    hostname: pihole 
     networks:
       webgateway: 
         ipv4_address: 172.20.0.10
